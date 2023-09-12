@@ -4,7 +4,7 @@ export default class ReviewsController {
     static async apiPostReview(req, res, next) {
         try {
             const movieId = req.body.movie_id // get movie id from request body from mongoDB
-            const review = req.body.text // get review from request body from mongoDB
+            const review = req.body.review // get review from request body from mongoDB
             const userInfo = {
                 name: req.body.name,
                 _id: req.body.user_id // get user id from request body from mongoDB
